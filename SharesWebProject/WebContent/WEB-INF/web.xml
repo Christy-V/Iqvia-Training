@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>SharesWebProject</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>SaveShares</display-name>
+    <servlet-name>SaveShares</servlet-name>
+    <servlet-class>com.christy.controller.SaveSharesController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SaveShares</servlet-name>
+    <url-pattern>/save</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DeleteShares2</display-name>
+    <servlet-name>DeleteShares2</servlet-name>
+    <servlet-class>com.christy.controller.DeleteSharesController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteShares2</servlet-name>
+    <url-pattern>/delete</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>GetAllShares</display-name>
+    <servlet-name>GetAllShares</servlet-name>
+    <servlet-class>com.christy.controller.GetAllSharesController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetAllShares</servlet-name>
+    <url-pattern>/get</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Searchshares</display-name>
+    <servlet-name>Searchshares</servlet-name>
+    <servlet-class>com.christy.controller.SearchShares</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Searchshares</servlet-name>
+    <url-pattern>/search</url-pattern>
+  </servlet-mapping>
+</web-app>
